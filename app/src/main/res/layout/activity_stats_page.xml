@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.dren.cmput301assign1.Stats_page"
+    android:background="@color/background_floating_material_dark">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Display Stats"
+        android:textColor="#ffece7"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:id="@+id/display_stat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Display Mode"
+        android:id="@+id/display_mode"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="For All Times"
+        android:id="@+id/all_time"
+        android:layout_gravity="center_horizontal"
+        android:onClick="allTime" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="For last 10"
+        android:id="@+id/last10"
+        android:layout_gravity="center_horizontal"
+        android:onClick="last10" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="For Last 100"
+        android:id="@+id/last100"
+        android:layout_gravity="center_horizontal"
+        android:onClick="last100" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Minimum Time"
+        android:id="@+id/minTime"
+        android:onClick="minTime" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Maximum Time"
+        android:id="@+id/maxTime"
+        android:onClick="maxTime" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Average Time"
+        android:id="@+id/avgTime"
+        android:onClick="avgTime" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Median Time"
+        android:id="@+id/medianTime"
+        android:onClick="medianTime" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Stats"
+        android:id="@+id/clearStat"
+        android:onClick="clearStat" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_dark_material_dark">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="#ffece7"
+        android:text="Reaction Timer"
+        android:enabled="true" />
+
+    <Button
+        android:id="@+id/SinglePlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="Play"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:textSize="40dp"
+        android:onClick="StartGame" />
+
+    <Button
+        android:id="@+id/Statistics"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="Statistics"
+        android:textSize="40dp"
+        android:onClick="findStats" />
+
+    <Button
+        android:id="@+id/BackSingle"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="Back"
+        android:textSize="40dp" />
+
+
+</LinearLayout>

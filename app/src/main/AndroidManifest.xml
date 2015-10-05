@@ -16,6 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SinglePlayerMenu"
+            android:label="@string/title_activity_single_player_menu" >
+        </activity>
+        <activity
+            android:name=".SinglePlayer"
+            android:label="@string/title_activity_single_player" >
+        </activity>
+        <activity
+            android:name=".Stats_page"
+            android:label="@string/title_activity_stats_page" >
+        </activity>
+        <activity
+            android:name=".Multiplayer_menu"
+            android:label="@string/title_activity_multiplayer_menu" >
+        </activity>
+        <activity
+            android:name=".Two_players"
+            android:label="@string/title_activity_two_players" >
+        </activity>
+        <activity
+            android:name=".Three_player"
+            android:label="@string/title_activity_three_player" >
+        </activity>
+        <activity
+            android:name=".Four_player"
+            android:label="@string/title_activity_four_player" >
+        </activity>
+        <activity
+            android:name=".MultiStats"
+            android:label="@string/title_activity_multi_stats" >
+        </activity>
     </application>
 
 </manifest>

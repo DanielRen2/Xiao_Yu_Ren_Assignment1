@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">CMPUT301Assign1</string>
-
+    <string name="popup_content">This game will measure your reaction time, once the light on the screen goes green please press the button to record your reaction time.</string>
     <string name="hello_world">Hello world!</string>
+    <string name="warning">You hit tap too Early</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_single_player_menu">SinglePlayerMenu</string>
+    <string name="title_activity_single_player">SinglePlayer</string>
+    <string name="title_activity_stats_page">Stats_page</string>
+    <string name="title_activity_multiplayer_menu">Multiplayer_menu</string>
+    <string name="title_activity_two_players">Two_players</string>
+    <string name="title_activity_three_player">Three_player</string>
+    <string name="title_activity_four_player">Four_player</string>
+    <string name="title_activity_multi_stats">MultiStats</string>
 </resources>
