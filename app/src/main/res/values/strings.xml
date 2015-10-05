@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CMPUT301Assign1</string>
+    <string name="app_name">dren_CMPUT301Assign1</string>
     <string name="popup_content">This game will measure your reaction time, once the light on the screen goes green please press the button to record your reaction time.</string>
     <string name="hello_world">Hello world!</string>
     <string name="warning">You hit tap too Early</string>
