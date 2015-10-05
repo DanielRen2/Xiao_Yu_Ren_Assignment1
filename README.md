@@ -22,3 +22,4 @@ http://www.tutorialspoint.com/android/android_sending_email.htm(email sending)
 http://stackoverflow.com/questions/3072173/how-to-call-a-method-after-a-delay-in-android(android handlers)
 
 urls for internet help is also pasted near code that it was used on.
+Video demonstration App has been uploaded to gitepo
