@@ -1,3 +1,18 @@
+/*
+Copyright [2015] [Xiao Yu Ren]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ */
 package com.example.dren.cmput301assign1;
 
 import android.content.Context;
@@ -48,7 +63,7 @@ public class Two_players extends ActionBarActivity {
 
     public void button1(View v){
         MultiGameController.saveReaction(this, "Player 1" , "statsMulti2");
-        popUp(v, "Player 1");
+        popUp(v, "Player 1");//changes popup info
 
     }
     public void button2(View v){
@@ -56,7 +71,7 @@ public class Two_players extends ActionBarActivity {
         popUp(v, "Player 2");
     }
 
-    public void popUp(View v, String player){
+    public void popUp(View v, String player){//displays a popup with winner
 
         final PopupWindow pwindow;
 
@@ -75,7 +90,7 @@ public class Two_players extends ActionBarActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View popup) {
                 pwindow.dismiss();
-                finish();
+                finish();//exits on click
             }
 
         });

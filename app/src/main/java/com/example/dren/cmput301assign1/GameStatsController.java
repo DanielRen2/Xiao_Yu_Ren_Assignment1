@@ -1,3 +1,18 @@
+/*
+Copyright [2015] [Xiao Yu Ren]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ */
 package com.example.dren.cmput301assign1;
 
 import android.content.Context;
@@ -36,7 +51,7 @@ public class GameStatsController {
 
     //http://stackoverflow.com/questions/14376807/how-to-read-write-string-from-a-file-in-android
 
-    public static void loadFile(Context context){
+    public static void loadFile(Context context){ //loads savefile and reads information into Stats
         FileInputStream inputStream;
         try{
             inputStream = context.openFileInput(filename);
@@ -56,7 +71,7 @@ public class GameStatsController {
 
     }//end loadFile
 
-    public static void saveReaction(Context context, int reaction){
+    public static void saveReaction(Context context, int reaction){ //saves stats
         String sreaction = "" + reaction + "\n";
 
         FileOutputStream outputStream; //Saves to a file called stats
@@ -83,7 +98,7 @@ public class GameStatsController {
         }
     }
 
-    public static void clearStats(Context context){
+    public static void clearStats(Context context){ //clears savefile of data
         FileOutputStream outputStream;
         try{
             outputStream = context.openFileOutput(filename, Context.MODE_PRIVATE);
@@ -96,7 +111,7 @@ public class GameStatsController {
         }
     }//wipes savefile
 
-    public static void clearList(){
+    public static void clearList(){ //clears current Arraylist
         statistics.clear();
     }//wipes arrayList of reaction times
 
@@ -143,7 +158,7 @@ public class GameStatsController {
         }
         return maxStat;
     }
-    public static int avgTime(int mode){
+    public static int avgTime(int mode){ //calculates average time
         if(statistics.isEmpty()){
             return 0;
         }
@@ -157,7 +172,7 @@ public class GameStatsController {
         }
         return (avgTime/x);
     }//end avgTime
-    public static int medianTime(int mode){
+    public static int medianTime(int mode){ //calculates median time
         if(statistics.isEmpty()){
             return 0;
         }
@@ -195,7 +210,7 @@ public class GameStatsController {
         }
 
     }
-    public static String compileString(){
+    public static String compileString(){//compiles all information into one string to send
         String numbers = "";
         String buffer = "";
         int i = 0;
